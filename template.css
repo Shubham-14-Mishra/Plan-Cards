@@ -1,0 +1,97 @@
+body{
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+    flex-wrap: nowrap;
+    justify-content: center;
+    height: 100vh;
+    align-items: center;
+   
+}
+.card{
+    width: 300px;
+    height: 450px;
+    background-color: #f5e5e5;
+    padding: 25px;
+    font-family: sans-serif;
+    color: #231D4F;
+    display: flex;
+    flex-direction: column;
+    transition: 1s trnsform linear;
+    border-radius: 20px;
+}
+ul, li{
+    list-style-type: none;
+    margin: 10px;
+}
+li span{
+    margin-left: 10px;
+}
+i{
+    padding: 5px;
+    background-color: #EDECF9;
+    border-radius: 50%;
+    color: #5243C2;
+}
+.cost{
+    font-size: 35px;
+    font-weight: 500;
+}
+.popular{
+    border-radius: 50px;
+    background-color: #4031B2;
+    color: #F496D1;
+    width: 50%;
+    padding: 5px;
+    text-align: center;
+}
+.plan-name{
+    font-size: 35px;
+    font-weight: 600;
+}
+.description{
+    font-weight: 500;
+}
+button{
+    width: 100%;
+    height: 50px;
+    border: none;
+    outline: none;
+    border-radius: 30px;
+    font-size: 20px;
+    font-weight: 600;
+    margin-top: 20px;
+}
+.middle button{
+    background-color: #F496D1;
+    color: #F5F0F7;
+}
+.basic button{
+background-color: #F5F0F7;
+color: #F496D1;
+}
+.middle{
+    background-color: #5243C2;
+    color: #fff;
+    transition: 1s box-shadow linear;
+}
+.middle i{
+    background-color: #6355C8;
+    color: #fff;
+}
+.basic:hover{
+    transform:scale(1.01)
+}
+.middle:hover{
+    box-shadow: 0.24px 34px rgba(99, 85, 200, 0.3);
+}
+.last:hover{
+    transform:scale(1.01)
+}
+@media(max-width:840px){
+    body{
+        width: 100%;
+        height: 100%;
+    }
+
+}
